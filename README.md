@@ -2,6 +2,11 @@
 
 Inspired by [Tilde](https://cadejscroggins.github.io/tilde/).
 
+
+## Demo
+
+[Demo](https://cdn.rawgit.com/aflavio/startpage/master/index.html)
+
 ## Usage
 
 To go to a site, enter the corresponding key. To view the available sites and their keys, press `enter`. If your input doesn't match any of the commands, a generic Google search will be triggered. For example:
