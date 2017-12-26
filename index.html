@@ -6,30 +6,25 @@
   var config = {
     categories: [
       { name: "Google", commands: [
-        { key: 'd', name: 'Drive', url: 'https://drive.google.com/drive', search: '/search?q=' },
-        { key: 'g', name: 'Gmail', url: 'https://gmail.com', search: '/#search/' },
-        { key: 'k', name: 'Keep', url: 'https://keep.google.com', search: '/#search/text=' },
-        { key: 'nt', name: 'Netflix', url: 'https://www.netflix.com', search: '/search?q=' },
+        { key: 'i', name: 'Inbox', url: 'https://mail.google.com/mail/u/0/#inbox', search: '/#search/' },
         { key: 'y', name: 'YouTube', url: 'https://www.youtube.com', search: '/results?search_query=' },
       ] },
       { name: "Devel", commands: [
-        { key: 'b', name: 'Bitbucket', url: 'https://bitbucket.com', search: '/search?q=' },
         { key: 'gh', name: 'GitHub', url: 'https://github.com', search: '/search?q=' },
       ] },
-      { name: "News", commands: [
-        { key: 'c', name: 'CNN', url: 'http://cnn.com', search: '/search/?text=' },
-        { key: 'n', name: 'NYTimes', url: 'http://www.nytimes.com', search: '/search/sitesearch/#/' },
-        { key: 'f', name: 'Folha', url: 'http://folha.com.br', search: '' },
-        { key: 'r', name: 'Reddit', url: 'http://www.reddit.com', search: '/search?q=' },
-        { key: 't', name: 'O Tempo', url: 'http://otempo.com.br', search: '/busca-7.10677?q=' },
-      ] },
-      { name: "Media/Tools", commands: [
-        { key: 's', name: 'Spotify', url: 'https://spotify.com', search: '/search?q=' },
-        { key: 'wa', name: 'Whatsapp', url: 'https://web.whatsapp.com', search: '#' },
-      ] },
       { name: "Education", commands: [
-        { key: 'ka', name: 'Khan Academy', url: 'https://www.khanacademy.org', search: '/search?page_search_query=' },
-        { key: 'w', name: 'Wikipedia', url: 'https://en.wikipedia.org', search: '/wiki/' },
+        { key: 'c', name: 'Coursera', url: 'https://www.coursera.org/', search: null },
+        { key: 'e', name: 'edX', url: 'https://courses.edx.org/dashboard', search: null },
+        { key: 'u', name: 'Udacity', url: 'https://classroom.udacity.com/me', search: null },
+      ] },
+      { name: "Workflow", commands: [
+        { key: 'f', name: 'FreedCamp', url: 'https://freedcamp.com/dashboard', search: null },
+      ] },
+      { name: "Social/Tools", commands: [
+        { key: 'l', name: 'iLogin', url: 'http://172.27.27.1/login', search: null },
+        { key: 'L', name: 'LinkedIn', url: 'https://www.linkedin.com/in/yeshwantharcot/', search: null },
+        { key: 't', name: 'Twitter', url: 'https://twitter.com/YeshwanthArcot', search: null },
+        { key: 'C', name: 'CodinGame', url: 'http://codingame.com/', search: null },
       ] },
     ],
 
@@ -46,7 +41,7 @@
 
     // set to true to instantly redirect when a key is matched.
     // put a space before any search queries to prevent unwanted redirects.
-    instantRedirect: false,
+    instantRedirect: true,
 
     // suggest your most popular queries as you type.
     suggestions: true,
@@ -55,7 +50,7 @@
     suggestionsLimit: 4,
 
     // open queries in a new tab.
-    newTab: true,
+    newTab: false,
 
     // the delimiter between the hours and minutes in the clock.
     clockDelimiter: ':',
